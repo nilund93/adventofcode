@@ -8,7 +8,6 @@
 
 def import_puzzle():
     with open("puzzle_input/puzzle_01.txt", "rt") as f:
-    #with open("puzzle_input/elliot.txt", "rt") as f:
        return [int(entry) for entry in f.readlines()]
 
 def calculate_increases(data):
