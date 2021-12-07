@@ -44,7 +44,7 @@ if __name__ == "__main__":
     for crab in crabs:
         cost_p2 += gauss((abs(crab - mean)))
         
-    print(f"Part 2: {cost_p2} fuel.")
+    print(f"Part 2: {cost_p2} fuel.") # Part 2 prints 92439766
     
         
     
