@@ -35,7 +35,7 @@ if __name__ == "__main__":
     cost_p1 = 0
     for crab_pos in crabs:
         cost_p1 += abs(med - crab_pos)
-    print(f"{cost_p1} fuel.") # Part 1 prints 335330
+    print(f"Part 1: {cost_p1} fuel.") # Part 1 prints 335330
     
     # part 2 - we need to calculate the gauss formula using the absolute value of the mean value and the crabs position
     
