@@ -38,8 +38,6 @@ def part_two(puzzle):
     """
         How many calories do the top 3 elfs carry?
     """
-    print(sorted(puzzle, reverse=True))
-    
     print(sum(sorted(puzzle, reverse=True)[0:3]))
     
 
