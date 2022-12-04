@@ -15,6 +15,12 @@ def part_one(rounds):
         X Rock
         Y Paper
         Z Scissors
+        
+        Rock 1 point
+        Paper 2 points
+        Scissors 3 points
+        Draw 3 points
+        Win 6 points
     """
     points = 0
     for round in rounds:
@@ -39,8 +45,22 @@ def part_one(rounds):
 
 def part_two(rounds):
     
-    # THIS IS WRONG
-    # READ THE DAMN ASSIGNMENT
+    """ 
+        Opponent
+        A Rock
+        B Paper
+        C Scissors
+        
+        X Lose
+        Y Draw
+        Z Win
+
+        Rock 1 point
+        Paper 2 points
+        Scissors 3 points
+        Draw 3 points
+        Win 6 points
+    """
     points = 0
     for round in rounds:
         if round[0]=="A": points +=1
