@@ -11,7 +11,7 @@ def calculate_fuel(mass):
     if current_mass <= 0: return 0
     return current_mass + calculate_fuel(current_mass) 
 
-def Main():
+def main():
     #import and tokenize file
     masses = importFile()
     totalfuel = 0
@@ -23,4 +23,4 @@ def Main():
     #second problem prints 5027950
     
 
-Main()
+main()
