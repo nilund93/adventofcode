@@ -27,12 +27,10 @@ def solve_part_one(tickets: list[str]):
     points = 0
     for ticket in tickets:
         splitted_ticket = ticket.split(":")
-        card_no = splitted_ticket[0].split(" ")[1]
+        card_no = splitted_ticket[0].split()[1]
         numbers = splitted_ticket[1].split("|")
-        winning_numbers = numbers[0].split(" ")
-        my_numbers = numbers[1].split(" ")
-        while "" in winning_numbers: winning_numbers.remove("")
-        while "" in my_numbers: my_numbers.remove("")
+        winning_numbers = numbers[0].split()
+        my_numbers = numbers[1].split()
         
         power = 0
         
@@ -51,15 +49,10 @@ def solve_part_two(tickets: list[str]):
     
     for ticket in tickets:
         splitted_ticket = ticket.split(":")
-        card_no = splitted_ticket[0].split(" ")
+        card_no = splitted_ticket[0].split()
         numbers = splitted_ticket[1].split("|")
-        winning_numbers = numbers[0].split(" ")
-        my_numbers = numbers[1].split(" ")
-        
-        # Remove whitespace
-        while "" in winning_numbers: winning_numbers.remove("")
-        while "" in my_numbers: my_numbers.remove("")
-        while "" in card_no: card_no.remove("")
+        winning_numbers = numbers[0].split()
+        my_numbers = numbers[1].split()
         
         # initialize tickets 
         this_ticket = LotteryTicket(int(card_no[1]), my_numbers, winning_numbers)
